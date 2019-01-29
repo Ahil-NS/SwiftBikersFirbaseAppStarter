@@ -15,6 +15,12 @@
 		FAABE11C22000EB60009E2B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAABE11B22000EB60009E2B1 /* GoogleService-Info.plist */; };
 		FAABE11E220012410009E2B1 /* NewsFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABE11D220012410009E2B1 /* NewsFeedVC.swift */; };
 		FAABE120220012580009E2B1 /* GroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABE11F220012580009E2B1 /* GroupVC.swift */; };
+		FAABE122220013F50009E2B1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABE121220013F50009E2B1 /* DataService.swift */; };
+		FAABE124220017F10009E2B1 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABE123220017F10009E2B1 /* LoginVC.swift */; };
+		FAABE126220027F00009E2B1 /* InsetTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABE125220027F00009E2B1 /* InsetTextField.swift */; };
+		FAABE12822002A110009E2B1 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABE12722002A110009E2B1 /* ShadowView.swift */; };
+		FAABE12A22002BB30009E2B1 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABE12922002BB30009E2B1 /* AuthVC.swift */; };
+		FAABE12E22003AF00009E2B1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABE12D22003AF00009E2B1 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		FAABE11B22000EB60009E2B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAABE11D220012410009E2B1 /* NewsFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedVC.swift; sourceTree = "<group>"; };
 		FAABE11F220012580009E2B1 /* GroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupVC.swift; sourceTree = "<group>"; };
+		FAABE121220013F50009E2B1 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		FAABE123220017F10009E2B1 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		FAABE125220027F00009E2B1 /* InsetTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsetTextField.swift; sourceTree = "<group>"; };
+		FAABE12722002A110009E2B1 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		FAABE12922002BB30009E2B1 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
+		FAABE12D22003AF00009E2B1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +114,8 @@
 			children = (
 				FAABE11D220012410009E2B1 /* NewsFeedVC.swift */,
 				FAABE11F220012580009E2B1 /* GroupVC.swift */,
+				FAABE123220017F10009E2B1 /* LoginVC.swift */,
+				FAABE12922002BB30009E2B1 /* AuthVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -116,6 +130,8 @@
 		FAABE11822000DD20009E2B1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FAABE125220027F00009E2B1 /* InsetTextField.swift */,
+				FAABE12722002A110009E2B1 /* ShadowView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -130,6 +146,8 @@
 		FAABE11A22000E260009E2B1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FAABE121220013F50009E2B1 /* DataService.swift */,
+				FAABE12D22003AF00009E2B1 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -255,7 +273,13 @@
 			files = (
 				FAABE120220012580009E2B1 /* GroupVC.swift in Sources */,
 				FA09C8B621FF7F7900790C28 /* AppDelegate.swift in Sources */,
+				FAABE12A22002BB30009E2B1 /* AuthVC.swift in Sources */,
+				FAABE12E22003AF00009E2B1 /* AuthService.swift in Sources */,
 				FAABE11E220012410009E2B1 /* NewsFeedVC.swift in Sources */,
+				FAABE122220013F50009E2B1 /* DataService.swift in Sources */,
+				FAABE124220017F10009E2B1 /* LoginVC.swift in Sources */,
+				FAABE126220027F00009E2B1 /* InsetTextField.swift in Sources */,
+				FAABE12822002A110009E2B1 /* ShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +426,7 @@
 			baseConfigurationReference = 43D5E1360EDA5B18B503C9CE /* Pods-SwiftBikersFirbaseAppStarter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KNZCS3M9G;
 				INFOPLIST_FILE = SwiftBikersFirbaseAppStarter/Info.plist;
@@ -411,6 +436,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ahil.ios.SwiftBikersFirbaseAppStarter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -421,6 +447,7 @@
 			baseConfigurationReference = 65FAFC8101FF4D7BF75FC9F3 /* Pods-SwiftBikersFirbaseAppStarter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4KNZCS3M9G;
 				INFOPLIST_FILE = SwiftBikersFirbaseAppStarter/Info.plist;
@@ -430,6 +457,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ahil.ios.SwiftBikersFirbaseAppStarter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
