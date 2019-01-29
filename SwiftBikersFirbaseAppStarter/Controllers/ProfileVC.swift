@@ -1,5 +1,5 @@
 //
-//  NewsFeedVC.swift
+//  ProfileVC.swift
 //  SwiftBikersFirbaseAppStarter
 //
 //  Created by MacBook on 1/29/19.
@@ -8,13 +8,15 @@
 
 import UIKit
 
-class NewsFeedVC: UIViewController {
+class ProfileVC: UIViewController {
 
+    @IBOutlet weak var profileImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
- 
+    
 
 }
