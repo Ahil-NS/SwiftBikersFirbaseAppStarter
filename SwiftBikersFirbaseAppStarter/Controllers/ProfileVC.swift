@@ -31,7 +31,7 @@ class ProfileVC: UIViewController {
         let logoutAction = UIAlertAction(title: "Log", style: UIAlertAction.Style.default) { (action) in
             do{
                 try Auth.auth().signOut()
-                let authVC = self.storyboard?.instantiateViewController(withIdentifier: "") as! AuthVC
+                let authVC = self.storyboard?.instantiateViewController(withIdentifier: "AuthVC") as! AuthVC
                 self.present(authVC, animated: true, completion: nil)
             }
             catch{
