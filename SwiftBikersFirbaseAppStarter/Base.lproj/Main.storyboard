@@ -145,7 +145,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add People to your Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1q-AF-G4W">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add People to your Group" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1q-AF-G4W">
                                         <rect key="frame" x="0.0" y="137" width="304" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -233,7 +233,9 @@
                         <viewLayoutGuide key="safeArea" id="58g-cd-EDg"/>
                     </view>
                     <connections>
+                        <outlet property="addPeopleLabel" destination="R1q-AF-G4W" id="qZ2-OU-Gfo"/>
                         <outlet property="descriptionTextField" destination="BQ7-dl-2a6" id="0ql-QR-edM"/>
+                        <outlet property="doneButton" destination="UM1-A8-CFj" id="VUT-wG-LkB"/>
                         <outlet property="emailSearchTextField" destination="825-VO-PDC" id="b5c-6r-KSb"/>
                         <outlet property="tableView" destination="y0b-aX-wx1" id="waI-eG-hmO"/>
                         <outlet property="titleTextField" destination="qLs-oK-z1D" id="71o-U5-6RT"/>
