@@ -16,6 +16,8 @@
 		FA575F0822016A2A0022FF5A /* KeyboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575F0722016A2A0022FF5A /* KeyboardExt.swift */; };
 		FA575F0B220173780022FF5A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575F0A220173780022FF5A /* FeedCell.swift */; };
 		FA575F0D220174EB0022FF5A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575F0C220174EB0022FF5A /* Post.swift */; };
+		FA575F0F2201B7AC0022FF5A /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575F0E2201B7AC0022FF5A /* UserCell.swift */; };
+		FA575F112201B9430022FF5A /* CreateGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575F102201B9430022FF5A /* CreateGroupVC.swift */; };
 		FA5EF5C522006A3500B433EB /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5EF5C422006A3500B433EB /* ProfileVC.swift */; };
 		FAABE11C22000EB60009E2B1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FAABE11B22000EB60009E2B1 /* GoogleService-Info.plist */; };
 		FAABE11E220012410009E2B1 /* NewsFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABE11D220012410009E2B1 /* NewsFeedVC.swift */; };
@@ -42,6 +44,8 @@
 		FA575F0722016A2A0022FF5A /* KeyboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExt.swift; sourceTree = "<group>"; };
 		FA575F0A220173780022FF5A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		FA575F0C220174EB0022FF5A /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FA575F0E2201B7AC0022FF5A /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		FA575F102201B9430022FF5A /* CreateGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupVC.swift; sourceTree = "<group>"; };
 		FA5EF5C422006A3500B433EB /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		FAABE11B22000EB60009E2B1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FAABE11D220012410009E2B1 /* NewsFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedVC.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				FA575F0A220173780022FF5A /* FeedCell.swift */,
+				FA575F0E2201B7AC0022FF5A /* UserCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -137,6 +142,7 @@
 				FAABE12922002BB30009E2B1 /* AuthVC.swift */,
 				FA5EF5C422006A3500B433EB /* ProfileVC.swift */,
 				FA575F0522015CD60022FF5A /* CreatePostVC.swift */,
+				FA575F102201B9430022FF5A /* CreateGroupVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -302,6 +308,8 @@
 				FA575F0D220174EB0022FF5A /* Post.swift in Sources */,
 				FAABE12A22002BB30009E2B1 /* AuthVC.swift in Sources */,
 				FAABE12E22003AF00009E2B1 /* AuthService.swift in Sources */,
+				FA575F112201B9430022FF5A /* CreateGroupVC.swift in Sources */,
+				FA575F0F2201B7AC0022FF5A /* UserCell.swift in Sources */,
 				FAABE11E220012410009E2B1 /* NewsFeedVC.swift in Sources */,
 				FAABE122220013F50009E2B1 /* DataService.swift in Sources */,
 				FAABE124220017F10009E2B1 /* LoginVC.swift in Sources */,

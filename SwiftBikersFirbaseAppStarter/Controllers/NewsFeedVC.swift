@@ -23,7 +23,7 @@ class NewsFeedVC: UIViewController {
         super.viewDidAppear(true)
         
         DataService.instance.getAllPosts { (posts) in
-            self.MainPost = posts
+            self.MainPost = posts.reversed()
             self.tableView.reloadData()
             
         }
@@ -42,7 +42,11 @@ extension NewsFeedVC : UITableViewDelegate, UITableViewDataSource{
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as? FeedCell else {return UITableViewCell()}
         let img = #imageLiteral(resourceName: "feed-tabIcon")
         let post = MainPost[indexPath.row]
-        cell.configureCell(profileImage: img, email: post.senderId, content: post.content)
+        
+        DataService.instance.getUserName(forUID: post.senderId) { (returnedUserName) in
+            cell.configureCell(profileImage: img, email: returnedUserName, content: post.content)
+        }
+      
         
         return cell
     }

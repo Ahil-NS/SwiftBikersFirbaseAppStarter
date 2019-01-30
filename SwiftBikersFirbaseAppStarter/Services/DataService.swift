@@ -41,6 +41,17 @@ class DataService{
         REF_USERS.child(uid).updateChildValues(userData)
     }
     
+    func getUserName(forUID uid: String, handler: @escaping (_ userName : String) -> ()){
+        REF_USERS.observeSingleEvent(of: .value) { (UserSnapshot) in
+            guard let userSnap = UserSnapshot.children.allObjects as? [DataSnapshot] else{return}
+            
+            for user in userSnap{
+                if(user.key ==  uid){
+                    handler(user.childSnapshot(forPath: "email").value as! String)
+                }
+            }
+        }
+    }
     func uploadPost(withPostMsg message: String, forUID uid: String, withGroupKey groupKey:String?, postComplete : @escaping(_ status: Bool) -> ()){
         if(groupKey != nil){
             //Post in Group
@@ -50,22 +61,6 @@ class DataService{
             //childByAutoId generates a new child location using a unique key and returns a FIRDatabaseReference to it
             _REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId": uid])
             postComplete(true)
-        }
-    }
-    
-    func getAllFeedMessages(handler: @escaping (_ messages: [Post]) -> ()) {
-        var postArray = [Post]()
-        REF_FEED.observeSingleEvent(of: .value) { (feedMessageSnapshot) in
-            guard let feedMessageSnapshot = feedMessageSnapshot.children.allObjects as? [DataSnapshot] else { return }
-
-            for message in feedMessageSnapshot {
-                let content = message.childSnapshot(forPath: "content").value as! String
-                let senderId = message.childSnapshot(forPath: "senderId").value as! String
-                let message = Post(content: content, senderId: senderId)
-                postArray.append(message)
-            }
-
-            handler(postArray)
         }
     }
     
