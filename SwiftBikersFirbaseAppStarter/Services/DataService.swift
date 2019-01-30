@@ -41,4 +41,17 @@ class DataService{
         REF_USERS.child(uid).updateChildValues(userData)
     }
     
+    func uploadPost(withPostMsg message: String, forUID uid: String, withGroupKey groupKey:String?, postComplete : @escaping(_ status: Bool) -> ()){
+        if(groupKey != nil){
+            //Post in Group
+        }
+        else{
+            //POST PUBLIC
+            //childByAutoId generates a new child location using a unique key and returns a FIRDatabaseReference to it
+            _REF_FEED.childByAutoId().updateChildValues(["content": message, "senderId": uid])
+            postComplete(true)
+        }
+    }
+    
 }
+
