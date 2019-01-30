@@ -70,14 +70,14 @@
                                 <rect key="frame" x="0.0" y="90" width="320" height="429"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="100" id="ghh-Lf-Zyc">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="postCell" rowHeight="100" id="ghh-Lf-Zyc" customClass="FeedCell" customModule="SwiftBikersFirbaseAppStarter" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="320" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ghh-Lf-Zyc" id="mnq-Td-kcT">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R5T-z0-LHv">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R5T-z0-LHv">
                                                     <rect key="frame" x="29" y="17" width="59" height="66"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="66" id="D5d-OT-ayP"/>
@@ -111,8 +111,17 @@
                                                 <constraint firstItem="R5T-z0-LHv" firstAttribute="leading" secondItem="mnq-Td-kcT" secondAttribute="leadingMargin" constant="14" id="vY7-ih-mdu"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="emailLabel" destination="PcZ-Ij-mql" id="amz-fi-UtJ"/>
+                                            <outlet property="messageLabel" destination="fhD-zg-Joo" id="cN7-jI-eRG"/>
+                                            <outlet property="profileImgView" destination="R5T-z0-LHv" id="MMG-U5-Egs"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ch7-lD-exE" id="c7s-Eh-D32"/>
+                                    <outlet property="delegate" destination="ch7-lD-exE" id="xIx-0C-bs2"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ESH-9D-IW0">
                                 <rect key="frame" x="0.0" y="20" width="320" height="70"/>
@@ -156,6 +165,9 @@
                         <viewLayoutGuide key="safeArea" id="yti-3O-lZd"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Feeds" image="feed-tabIcon" selectedImage="feed-tabIcon" id="wTt-aj-ITc"/>
+                    <connections>
+                        <outlet property="tableView" destination="8AI-zr-Tds" id="y3t-Oq-FhE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ge-Sz-lXC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

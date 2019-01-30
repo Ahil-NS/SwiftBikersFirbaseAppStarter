@@ -53,5 +53,37 @@ class DataService{
         }
     }
     
+    func getAllFeedMessages(handler: @escaping (_ messages: [Post]) -> ()) {
+        var postArray = [Post]()
+        REF_FEED.observeSingleEvent(of: .value) { (feedMessageSnapshot) in
+            guard let feedMessageSnapshot = feedMessageSnapshot.children.allObjects as? [DataSnapshot] else { return }
+
+            for message in feedMessageSnapshot {
+                let content = message.childSnapshot(forPath: "content").value as! String
+                let senderId = message.childSnapshot(forPath: "senderId").value as! String
+                let message = Post(content: content, senderId: senderId)
+                postArray.append(message)
+            }
+
+            handler(postArray)
+        }
+    }
+    
+    func getAllPosts(handler: @escaping(_ posts: [Post]) -> ()){
+        var postArray = [Post]()
+        REF_FEED.observeSingleEvent(of: .value) { (postMessageSnapshot) in
+            
+            guard let postMessageSnap = postMessageSnapshot.children.allObjects as? [DataSnapshot] else{return}
+            
+            for singlePost in postMessageSnap{
+                let contentMsg = singlePost.childSnapshot(forPath: "content").value as! String
+                let senderId = singlePost.childSnapshot(forPath: "senderId").value as! String
+                let post = Post(content: contentMsg, senderId: senderId)
+                postArray.append(post)
+            }
+            handler(postArray)
+        }
+        
+    }
 }
 

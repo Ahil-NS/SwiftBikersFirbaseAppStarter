@@ -42,8 +42,6 @@ class CreatePostVC: UIViewController {
     @IBAction func closeButtonTapped(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
-
 }
 
 extension CreatePostVC : UITextViewDelegate{
