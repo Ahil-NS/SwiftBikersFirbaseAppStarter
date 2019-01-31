@@ -32,6 +32,7 @@
 		FAABE12822002A110009E2B1 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABE12722002A110009E2B1 /* ShadowView.swift */; };
 		FAABE12A22002BB30009E2B1 /* AuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABE12922002BB30009E2B1 /* AuthVC.swift */; };
 		FAABE12E22003AF00009E2B1 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABE12D22003AF00009E2B1 /* AuthService.swift */; };
+		FACD049E22033228005F39CE /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD049D22033228005F39CE /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		FAABE12722002A110009E2B1 /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		FAABE12922002BB30009E2B1 /* AuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthVC.swift; sourceTree = "<group>"; };
 		FAABE12D22003AF00009E2B1 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		FACD049D22033228005F39CE /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				FA575F0722016A2A0022FF5A /* KeyboardExt.swift */,
+				FACD049D22033228005F39CE /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 				FAABE120220012580009E2B1 /* GroupVC.swift in Sources */,
 				FA187E322202219000F8FD04 /* GroupCell.swift in Sources */,
 				FA575F0822016A2A0022FF5A /* KeyboardExt.swift in Sources */,
+				FACD049E22033228005F39CE /* UIViewControllerExt.swift in Sources */,
 				FA09C8B621FF7F7900790C28 /* AppDelegate.swift in Sources */,
 				FA51210722024D4E00BD3958 /* GroupFeedVC.swift in Sources */,
 				FA51210522024C9900BD3958 /* GroupFeedCell.swift in Sources */,

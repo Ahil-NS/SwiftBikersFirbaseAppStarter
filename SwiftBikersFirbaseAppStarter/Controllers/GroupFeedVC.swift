@@ -56,7 +56,7 @@ class GroupFeedVC: UIViewController {
        
     }
     @IBAction func backButtonTapped(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        dismissDetail()
     }
     
     @IBAction func sendButtonTapped(_ sender: Any) {

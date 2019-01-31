@@ -47,7 +47,6 @@ extension GroupVC: UITableViewDelegate, UITableViewDataSource{
         guard let feedVC = storyboard?.instantiateViewController(withIdentifier: "GroupFeedVC") as? GroupFeedVC else{return}
         
         feedVC.initData(group: groupArray[indexPath.row])
-        
-        present(feedVC, animated: true, completion: nil)
+        presentDetail(feedVC)
     }
 }
