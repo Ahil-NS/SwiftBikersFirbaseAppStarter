@@ -643,10 +643,6 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="AEr-y7-FoW" id="c8x-Ql-nEq"/>
-                                    <outlet property="delegate" destination="AEr-y7-FoW" id="HMA-Qs-KUS"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -671,7 +667,9 @@
                         <outlet property="groupTitleLabel" destination="Uca-G1-Kvl" id="kiO-n6-4gn"/>
                         <outlet property="memberNameLabel" destination="ZNt-Gc-GGV" id="WQq-3r-OZu"/>
                         <outlet property="messageTextField" destination="Aux-El-RJx" id="aZn-6e-oxf"/>
+                        <outlet property="sendButton" destination="oAd-Bl-UR2" id="K7I-Nn-Gw6"/>
                         <outlet property="sendButtonView" destination="bzI-xl-Vim" id="vdd-Lt-CoQ"/>
+                        <outlet property="tableView" destination="kGf-8M-l6n" id="SS9-t8-T41"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="615-IW-nH0" userLabel="First Responder" sceneMemberID="firstResponder"/>
