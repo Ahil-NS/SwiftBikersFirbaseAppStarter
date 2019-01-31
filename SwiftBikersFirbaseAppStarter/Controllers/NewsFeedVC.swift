@@ -46,10 +46,6 @@ extension NewsFeedVC : UITableViewDelegate, UITableViewDataSource{
         DataService.instance.getUserName(forUID: post.senderId) { (returnedUserName) in
             cell.configureCell(profileImage: img, email: returnedUserName, content: post.content)
         }
-      
-        
         return cell
     }
-    
-    
 }

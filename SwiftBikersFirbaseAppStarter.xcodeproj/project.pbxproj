@@ -14,6 +14,8 @@
 		FA09C8C021FF7F7A00790C28 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA09C8BE21FF7F7A00790C28 /* LaunchScreen.storyboard */; };
 		FA187E322202219000F8FD04 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA187E312202219000F8FD04 /* GroupCell.swift */; };
 		FA187E34220237AF00F8FD04 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA187E33220237AF00F8FD04 /* Group.swift */; };
+		FA51210522024C9900BD3958 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51210422024C9900BD3958 /* GroupFeedCell.swift */; };
+		FA51210722024D4E00BD3958 /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA51210622024D4E00BD3958 /* GroupFeedVC.swift */; };
 		FA575F0622015CD60022FF5A /* CreatePostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575F0522015CD60022FF5A /* CreatePostVC.swift */; };
 		FA575F0822016A2A0022FF5A /* KeyboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575F0722016A2A0022FF5A /* KeyboardExt.swift */; };
 		FA575F0B220173780022FF5A /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA575F0A220173780022FF5A /* FeedCell.swift */; };
@@ -44,6 +46,8 @@
 		FA09C8C121FF7F7A00790C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA187E312202219000F8FD04 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		FA187E33220237AF00F8FD04 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		FA51210422024C9900BD3958 /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
+		FA51210622024D4E00BD3958 /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
 		FA575F0522015CD60022FF5A /* CreatePostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostVC.swift; sourceTree = "<group>"; };
 		FA575F0722016A2A0022FF5A /* KeyboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExt.swift; sourceTree = "<group>"; };
 		FA575F0A220173780022FF5A /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 				FA575F0A220173780022FF5A /* FeedCell.swift */,
 				FA575F0E2201B7AC0022FF5A /* UserCell.swift */,
 				FA187E312202219000F8FD04 /* GroupCell.swift */,
+				FA51210422024C9900BD3958 /* GroupFeedCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 				FA5EF5C422006A3500B433EB /* ProfileVC.swift */,
 				FA575F0522015CD60022FF5A /* CreatePostVC.swift */,
 				FA575F102201B9430022FF5A /* CreateGroupVC.swift */,
+				FA51210622024D4E00BD3958 /* GroupFeedVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -312,6 +318,8 @@
 				FA187E322202219000F8FD04 /* GroupCell.swift in Sources */,
 				FA575F0822016A2A0022FF5A /* KeyboardExt.swift in Sources */,
 				FA09C8B621FF7F7900790C28 /* AppDelegate.swift in Sources */,
+				FA51210722024D4E00BD3958 /* GroupFeedVC.swift in Sources */,
+				FA51210522024C9900BD3958 /* GroupFeedCell.swift in Sources */,
 				FA575F0D220174EB0022FF5A /* Post.swift in Sources */,
 				FAABE12A22002BB30009E2B1 /* AuthVC.swift in Sources */,
 				FAABE12E22003AF00009E2B1 /* AuthService.swift in Sources */,
